@@ -2,17 +2,15 @@
 CABEZOTE
 =============================================*/
 
-$("#btnCategorias").click(function(){
+$(document).ready(function(){
+$("#menu-icon").click(function(){
 
-	if(window.matchMedia("(max-width:767px)").matches){
-
-		$("#btnCategorias").after($("#categorias").slideToggle("fast"))
-
-	}else{
-
-		$("#cabezote").after($("#categorias").slideToggle("fast"))
-		
-	}
-
+   if($(".menu").hasClass('open')){
+            $(".menu").removeClass('open');
+        }
+        else{
+            $(".menu").addClass('open');
+        }
 		
 })
+});

@@ -36,7 +36,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Russo+One" rel="stylesheet">
 
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plantilla.css">
 

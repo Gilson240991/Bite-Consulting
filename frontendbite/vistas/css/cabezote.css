@@ -18,16 +18,40 @@ TOP
 	margin:0 1px;
 }
 
-.registro ul{
+.info-mail ul{
 	text-align: right;
 	font-size:12px;
 }
+#cabezote ul{
+	margin-top: 30px;
+	text-align: right;
+	font-size: 18px;
+	font-weight: bold;
+
+
+}
+
+#cabezote ul li{
+	display:inline;
+	margin:0px 5px;
+	color:#354578;
+
+}
+
+#cabezote ul li i{
+	color: #8FC144;
+	font-size: 35px;
+	margin-right: 10px;
+	line-height: 1;
+	font-weight: bold;
+
+}
+
 
 /*=============================================
 HEADER
 =============================================*/
 header{
-	border-bottom: 5px solid #eee;
 }
 
 /*=============================================
@@ -41,8 +65,10 @@ ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
 	=============================================*/
 
 	header #logotipo img{
-		padding:20px 60px;
-		padding-left:0px;
+		padding-top: 8px;
+	    padding-bottom: 8px;
+	    width: 60% !important;
+
 	}
 
 	header #carrito{
@@ -62,8 +88,9 @@ ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
 	=============================================*/
 
 	header #logotipo img{
-		padding:25px 60px;
-		padding-left:0px;
+		padding-top: 8px;
+	    padding-bottom: 8px;
+
 	}
 
 	header #carrito{
@@ -83,7 +110,10 @@ ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 	=============================================*/
 
 	header #logotipo img{
-		padding:30px 0px;
+		padding-top: 8px;
+	    padding-bottom: 8px;
+	    max-width: 150%;
+
 	}
 
 	header #carrito{
@@ -94,6 +124,7 @@ ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 		display:none;
 	}
 
+	
 }
 
 /*=============================================
@@ -113,14 +144,20 @@ MOVIL (XS revisamos en 320px)
 	#top #registro{
 		border-top:1px solid #222;
 	}
+
+	#top .info-mail{
+		display: none;
+	}
 	
 	/*=============================================
 	HEADER
 	=============================================*/
 
 	header #logotipo img{
-		padding:30px;
-		padding-bottom:10px;
+		padding-top: 8px;
+	    padding-bottom: 8px;
+	    max-width: 25%!important;
+	    margin:0 auto;
 	}
 
 	header #categorias{
@@ -134,5 +171,10 @@ MOVIL (XS revisamos en 320px)
 	header #carrito{
 		margin:0px;
 	}
+
+	#cabezote ul{
+		display: none;
+	}
+
 	
 }

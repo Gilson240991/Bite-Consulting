@@ -7,9 +7,21 @@
     border: none;
     outline: none;
 }
+#menu-icon{
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 4px;
+    display: none;
+}
+
+.open{
+    display: block !important;
+}
  
-.menu {
-	margin-top: 40px;
+.menu-header {
+	/*margin-top: 40px;*/
     height: 40px;
     width: 100%;
  
@@ -19,12 +31,15 @@
     background: -o-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
     background: -ms-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
     background: linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
- 
-   -webkit-border-radius: 5px;
+
+  /* -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;		
+    border-radius: 5px;		*/
 }
- 
+ .menu{
+    width: 60%;
+
+ }
 .menu li {
     position: relative;
     list-style: none;
@@ -61,3 +76,61 @@
 .menu li:last-child a{ border-right: none; }
  
 .menu li:hover a { color: #8fde62; }
+
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+.menu{
+    width: 80%;
+}
+}
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px){
+.menu{
+    width: 100%;
+    display: table;
+    margin-top: 5px;
+    background-color: #454651;
+
+
+}
+
+
+
+.menu li{
+    width: 100%;
+    padding-left: 20px;
+    border-left: 8px solid #8FC144;
+     border-right:  8px solid #8FC144;
+    border-bottom: 1px solid #8FC144;
+   
+}
+.menu li a{
+    border-left: none !important;
+    border-right: none !important;
+
+}
+#menu-icon{
+    display: block;
+
+}
+.menu{
+    display: none;
+}
+}
